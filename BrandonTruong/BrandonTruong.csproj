@@ -165,6 +165,7 @@
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="google11ed3865db5b002a.html" />
     <Content Include="Images\arrow.jpg" />
     <Content Include="Images\bg\baloon.gif" />
     <Content Include="Images\bg\bg.gif" />
