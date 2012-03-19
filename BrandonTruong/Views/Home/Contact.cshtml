@@ -2,49 +2,104 @@
     ViewBag.Title = "Contact";
 }
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>@ViewBag.Message</h2>
-</hgroup>
-
-<section class="contact">
-    <header>
-        <h3>Phone:</h3>
-    </header>
-    <p>
-        <span class="label">Main:</span>
-        <span>425.555.0100</span>
-    </p>
-    <p>
-        <span class="label">After Hours:</span>
-        <span>425.555.0199</span>
-    </p>
-</section>
-
-<section class="contact">
-    <header>
-        <h3>Email:</h3>
-    </header>
-    <p>
-        <span class="label">Support:</span>
-        <span><a href="mailto:Support@example.com">Support@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">Marketing:</span>
-        <span><a href="mailto:Marketing@example.com">Marketing@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">General:</span>
-        <span><a href="mailto:General@example.com">General@example.com</a></span>
-    </p>
-</section>
-
-<section class="contact">
-    <header>
-        <h3>Address:</h3>
-    </header>
-    <p>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399
-    </p>
-</section>
+	<!-- START MEDIUM SECTION -->
+	<div class="container_12 medium">
+	
+		<!-- START GET IN TOUCH TEXT -->
+   		<div class="grid_6">
+	   		<div class="getTouch">
+	   			<h2>Get in <span class="orange">touch with me</span></h2>
+	   			<p>
+	   				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat mi sit 
+	   				amet mauris feugiat eu imperdiet augue interdum. Aliquam nisl orci, aliquam eget 
+	   				vehicula non, faucibus at odio. Ut sit amet elit nunc, a gravida justo. Lorem ipsum 
+	   				dolor sit amet, consectetur adipiscing elit. Integer rhoncus porttitor nisi, a dapibus 
+	   				nulla lacinia non.
+	   			</p>
+	   			
+	   		</div>
+   		</div>
+   		<!-- END GET IN TOUCH TEXT -->
+   	
+   		<!-- START MASCOTTE -->
+	   	<div class="grid_6 mascotte">
+   			<img src="images/contact/mascotte.gif" alt="Mascotte" />		
+	   	</div>
+	   	<!-- END MASCOTTE -->
+   	  
+		<div class="clear"></div>
+		
+	</div>
+	<!-- END MEDIUM SECTION -->
+ 
+	<!-- START BOTTOM SECTION -->
+	<div class="container_12">
+	
+		<!-- START CONTACT FORM -->
+		<div class="grid_6">
+			<div class="contactForm">
+	   			<h2>Send me a <span class="orange">message</span></h2>
+	   			
+	   			<?php echo (($form_submitted) ? $responseMarkup : ''); ?>
+					
+				<form id="contactForm" action="" method="post">					
+					<div class="formContent">
+						<label for="name">Your name<span class="name">required*</span></label>					
+						<input type="text" name="name" id="name" class="input required" value="" />			
+						<label for="email">Your email.<span class="email">required*</span></label>
+						<input type="text" name="email" id="email" class="input required" value="" />
+												
+						<fieldset>	
+							<label class="optional">Your phone</label>
+							<input type="text" name="phone" id="phone" class="input" value="" />					
+						</fieldset>					
+				
+						<textarea class="textarea" name="message" rows="10" cols="10"></textarea>
+						<input type="hidden" name="contact_form" value="1" />
+						<input type="submit" class="submit" value="send message" />									
+					</div>
+				</form>				
+	   		</div>
+		</div>
+		<!-- END CONTACT FORM -->
+	   	
+		<!-- START CONTACT -->
+	   	<div class="grid_6">
+	   		<div class="skype">
+	   			<h2>You can <span class="orange">contact me</span> also by:</h2>
+	   			<a href="#"><img src="images/contact/contact.gif" alt="Call me or contact me on skype" /></a>	
+	   		</div>
+	   		
+	   		<!-- START SOCIAL -->
+	   		<div id="social">
+		   		<a href="#"><img src="images/icons/delicious.png" alt="My delicious account" /></a>	
+	   			<a href="#"><img src="images/icons/linkedin.png" alt="My flickr account" /></a>
+	   			<a href="#"><img src="images/icons/facebook.png" alt="My facebook account" /></a>
+	   			<a href="#"><img src="images/icons/twitter.png" alt="My twitter account" /></a>
+	   			<a href="#"><img src="images/icons/feed.png" alt="My feed" /></a>
+   			</div>	
+   			<!-- END SOCIAL -->
+   			
+	   	</div>
+	   	<!-- END CONTACT -->
+	   	
+	   	<div class="clear"></div>
+	</div>
+	<!-- END BOTTOM SECTION -->
+<!-- contact form validation -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#contactForm").validate({
+            errorClass: "inputError",
+            messages: {
+                name: {
+                    required: ""
+                },
+                email: {
+                    required: ""
+                }
+            }
+        })
+    });
+</script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
