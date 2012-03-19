@@ -285,6 +285,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <None Include="Views\Shared\_MyLayout.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
