@@ -1,9 +1,0 @@
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\bin\Debug\BrandonTruong.Tests.dll.config
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\bin\Debug\BrandonTruong.Tests.dll
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\bin\Debug\BrandonTruong.Tests.pdb
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\bin\Debug\BrandonTruong.dll
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\bin\Debug\System.Web.Optimization.dll
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\bin\Debug\BrandonTruong.pdb
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\obj\Debug\BrandonTruong.Tests.dll
-C:\Users\brandon\Documents\Visual Studio 2010\Projects\BrandonTruong\BrandonTruong.Tests\obj\Debug\BrandonTruong.Tests.pdb
