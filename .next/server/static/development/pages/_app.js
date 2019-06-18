@@ -183,7 +183,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/brandon.truong/Desktop/Desktop - C02YJ679JGH6/brandontruong/lib/with-apollo-client.js";
+var _jsxFileName = "/Users/tranphuctruong/Downloads/repos/heroku/brandontruong/lib/with-apollo-client.js";
 
 
 
@@ -1282,7 +1282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/brandon.truong/Desktop/Desktop - C02YJ679JGH6/brandontruong/pages/_app.js";
+var _jsxFileName = "/Users/tranphuctruong/Downloads/repos/heroku/brandontruong/pages/_app.js";
 
 
 
