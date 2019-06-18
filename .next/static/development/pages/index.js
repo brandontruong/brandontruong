@@ -61,7 +61,7 @@ var Index = function Index() {
       lineNumber: 3
     },
     __self: this
-  }, "Hello World!"));
+  }, "Hello World! yay"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
