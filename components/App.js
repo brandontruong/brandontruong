@@ -1,42 +1,36 @@
-export default ({ children }) => (
-  <main>
-    {children}
+import { Fragment } from 'react'
+import Header from './Header'
+
+const App = ({ children, pathname }) => (
+  <Fragment>
+    <Header pathname={pathname} />
+    <main>
+      {children}
+    </main>
     <style jsx global>{`
-      * {
-        font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
-          'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New',
-          monospace, serif;
-      }
       body {
+        font-family: 'Source Sans Pro', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         margin: 0;
-        padding: 25px 50px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      main {
+        max-width: 650px;
+        margin: 32px auto;
+        padding: 0 24px;
       }
       a {
-        color: #22bad9;
-      }
-      p {
-        font-size: 14px;
-        line-height: 24px;
+        color: deepskyblue;
+        text-decoration: none;
       }
       article {
         margin: 0 auto;
         max-width: 650px;
       }
-      button {
-        align-items: center;
-        background-color: #22bad9;
-        border: 0;
-        color: white;
-        display: flex;
-        padding: 5px 7px;
-      }
-      button:active {
-        background-color: #1b9db7;
-        transition: background-color 0.3s;
-      }
-      button:focus {
-        outline: none;
-      }
     `}</style>
-  </main>
+  </Fragment>
 )
+
+export default App

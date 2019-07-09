@@ -1,12 +1,11 @@
+import withData from '../lib/withData'
 import App from '../components/App'
-import Header from '../components/Header'
-import Submit from '../components/Submit'
-// import PostList from '../components/PostList'
+import PostList from '../components/PostList'
 
-export default () => (
-  <App>
-    <Header />
-    <Submit />
-    {/* <PostList /> */}
+const IndexPage = withData(props => (
+  <App pathname={props.url.pathname}>
+    <PostList />
   </App>
-)
+))
+
+export default IndexPage
