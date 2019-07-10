@@ -21,6 +21,13 @@
     "rules": {
         "react/jsx-uses-vars": [
             "error"
+        ],
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true
+            }
         ]
     }
 }
