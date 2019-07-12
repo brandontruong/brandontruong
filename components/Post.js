@@ -1,9 +1,9 @@
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
-import Markdown from 'react-markdown'
+import gql from 'graphql-tag';
+import { graphql } from 'react-apollo';
+import Markdown from 'react-markdown';
 
 const PostContent = ({ data: { loading, error, post } }) => {
-  if (error) return <h1>Error loading post {JSON.stringify(error)}.</h1>
+  if (error) return <h1>Error loading post {JSON.stringify(error)}.</h1>;
   if (!loading) {
     return (
       <article>
@@ -25,10 +25,10 @@ const PostContent = ({ data: { loading, error, post } }) => {
           }
         `}</style>
       </article>
-    )
+    );
   }
-  return <h2>Loading post...</h2>
-}
+  return <h2>Loading post...</h2>;
+};
 
 export const singlePost = gql`
   query singlePost($id: ID!) {
@@ -45,8 +45,8 @@ export const singlePost = gql`
       dateAndTime
     }
   }
-`
+`;
 
 export default graphql(singlePost, {
   options: ({ id }) => ({ variables: { id } })
-})(PostContent)
+})(PostContent);

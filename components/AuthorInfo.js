@@ -1,12 +1,11 @@
-import { Fragment } from 'react'
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import gql from 'graphql-tag';
+import { graphql } from 'react-apollo';
 
 const AuthorInfo = ({ data: { loading, error, authors } }) => {
-  if (error) return <h1>Error loading author.</h1>
+  if (error) return <h1>Error loading author.</h1>;
   if (!loading) {
     return (
-      <Fragment>
+      <>
         {authors.map(author => (
           <div className='author' key={author.id}>
             <div className='info-header'>
@@ -31,11 +30,11 @@ const AuthorInfo = ({ data: { loading, error, authors } }) => {
             width: auto;
           }
         `}</style>
-      </Fragment>
-    )
+      </>
+    );
   }
-  return <h2>Loading author...</h2>
-}
+  return <h2>Loading author...</h2>;
+};
 
 export const allAuthors = gql`
   query allAuthors {
@@ -48,6 +47,6 @@ export const allAuthors = gql`
       }
     }
   }
-`
+`;
 
-export default graphql(allAuthors)(AuthorInfo)
+export default graphql(allAuthors)(AuthorInfo);

@@ -38,6 +38,6 @@ const Header = ({ pathname }) => (
       }
     `}</style>
   </header>
-)
+);
 
-export default Header
+export default Header;

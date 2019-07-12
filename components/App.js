@@ -1,8 +1,7 @@
-import { Fragment } from 'react'
-import Header from './Header'
+import Header from './Header';
 
 const App = ({ children, pathname }) => (
-  <Fragment>
+  <>
     <Header pathname={pathname} />
     <main>
       {children}
@@ -30,7 +29,7 @@ const App = ({ children, pathname }) => (
         max-width: 650px;
       }
     `}</style>
-  </Fragment>
-)
+  </>
+);
 
-export default App
+export default App;

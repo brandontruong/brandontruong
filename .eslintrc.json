@@ -28,6 +28,24 @@
             {
                 "avoidEscape": true
             }
+        ],
+        "semi-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "indent": [
+            2,
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "semi": [
+            2,
+            "always"
         ]
     }
 }
