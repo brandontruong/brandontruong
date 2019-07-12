@@ -2,8 +2,7 @@
   "name": "nextjs-apollo-blog",
   "version": "1.0.0",
   "description": "GraphCMS Blog starter using Apollo Client and Next.js",
-  "repository": "https://github.com/hmeissner/graphcms-templates",
-  "author": "Hugo Meissner <hugomeissner@icloud.com>",
+  "author": "Brandon Truong <brandon.truong@outlook.com>",
   "license": "MIT",
   "scripts": {
     "dev": "node server.js",
@@ -25,7 +24,8 @@
     "react": "^16.8.6",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
-    "react-markdown": "^4.1.0"
+    "react-markdown": "^4.1.0",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
