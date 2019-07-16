@@ -11,6 +11,7 @@
     "lint": "standard"
   },
   "dependencies": {
+    "@rebass/grid": "^6.0.0",
     "apollo-cache-inmemory": "^1.6.2",
     "apollo-client": "^2.6.3",
     "apollo-link-http": "^1.5.15",
