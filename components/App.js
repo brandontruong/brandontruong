@@ -1,5 +1,4 @@
 import Header from './Header';
-import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
