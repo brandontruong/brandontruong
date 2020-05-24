@@ -11,9 +11,7 @@ export const BlogPostTemplate = ({
   title,
   date,
   author,
-  acf,
 }) => {
-  console.log('===acf=====', acf);
   return (
     <section className="section">
       <div className="container content">
@@ -25,17 +23,9 @@ export const BlogPostTemplate = ({
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <div style={{ marginTop: `4rem` }}>
               <p>
-                {`${date} - posted by `}
+                {date} - posted by{' '}
                 <Link to={`/author/${author.slug}`}>{author.name}</Link>
               </p>
-              {acf && (
-                <>
-                  <div>Social</div>
-                  <div>{`Facebook: ${acf.facebook}`}</div>
-                  <div>{`Twitter: ${acf.twitter}`}</div>
-                </>
-                
-              )}
               {categories && categories.length ? (
                 <div>
                   <h4>Categories</h4>
@@ -88,7 +78,6 @@ const BlogPost = ({ data }) => {
         title={post.title}
         date={post.date}
         author={post.author}
-        acf={post.acf}
       />
     </Layout>
   )
@@ -128,10 +117,6 @@ export const pageQuery = graphql`
       author {
         name
         slug
-      }
-      acf {
-        facebook
-        twitter
       }
     }
   }

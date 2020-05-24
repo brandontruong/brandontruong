@@ -2,9 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Navbar from './Navbar'
-// import './all.sass'
+import './all.sass'
 
-const Layout = ({ children }) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Home | Gatsby + WordPress" />
     <Navbar />
@@ -12,4 +12,4 @@ const Layout = ({ children }) => (
   </div>
 )
 
-export default Layout;
+export default TemplateWrapper
