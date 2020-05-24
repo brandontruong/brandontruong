@@ -1,9 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar'
+import Helmet from 'react-helmet';
+import Navbar from './Navbar';
 
 const Layout = ({ children }) => (
   <div>
-    <div>Layout here</div>
+    <Helmet title="Home | Gatsby + WordPress" />
     <Navbar />
     <div>{children}</div>
   </div>
