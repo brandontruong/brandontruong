@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import PostList from '../components/PostList'
+import Layout from "../components/Layout";
 
 const Tag = props => {
   const { data, pageContext } = props
@@ -13,10 +14,10 @@ const Tag = props => {
   } with the tag ${tag}`
 
   return (
-    <>
+    <Layout>
       <Helmet title={`${tag} | ${siteTitle}`} />
       <PostList posts={posts} title={title} />
-    </>
+    </Layout>
   )
 }
 
