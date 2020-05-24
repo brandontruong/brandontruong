@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import PostList from '../components/PostList'
 import Pagination from '../components/Pagination'
+import Test from "../components/Test";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,6 +12,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <>
+        <Test />
         <PostList posts={posts} title="Latest posts" />
         <Pagination pageContext={pageContext} pathPrefix="/" />
       </>
