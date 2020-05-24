@@ -34,9 +34,9 @@ const Page = ({ data }) => {
   const { wordpressPage: page } = data
 
   return (
-    <Layout>
+    <>
       <PageTemplate title={page.title} content={page.content} />
-    </Layout>
+    </>
   )
 }
 

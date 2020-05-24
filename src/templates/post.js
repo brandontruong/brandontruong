@@ -23,7 +23,10 @@ export const BlogPostTemplate = ({
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <div style={{ marginTop: `4rem` }}>
               <p>
-                {date} - posted by{' '}
+                {date}
+                {' '}
+- posted by
+                {' '}
                 <Link to={`/author/${author.slug}`}>{author.name}</Link>
               </p>
               {categories && categories.length ? (
@@ -69,7 +72,7 @@ const BlogPost = ({ data }) => {
   const { wordpressPost: post } = data
 
   return (
-    <Layout>
+    <>
       <Helmet title={`${post.title} | Blog`} />
       <BlogPostTemplate
         content={post.content}
@@ -79,7 +82,7 @@ const BlogPost = ({ data }) => {
         date={post.date}
         author={post.author}
       />
-    </Layout>
+    </>
   )
 }
 
