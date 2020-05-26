@@ -5,7 +5,7 @@ import './all.sass';
 
 const Layout = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + WordPress" />
+    <Helmet title="Brandon Truong | Home" />
     <Navbar />
     <div>{children}</div>
   </div>

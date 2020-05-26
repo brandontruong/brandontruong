@@ -4,9 +4,13 @@
   "version": "0.1.0",
   "author": "GatsbyCentral.com",
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "bulma": "^0.7.5",
     "gatsby": "^2.18.1",
     "gatsby-awesome-pagination": "^0.3.3",
+    "gatsby-cli": "^2.12.35",
+    "gatsby-plugin-emotion": "^4.3.2",
     "gatsby-plugin-lodash": "^3.1.7",
     "gatsby-plugin-netlify": "^2.1.12",
     "gatsby-plugin-purgecss": "^4.0.1",
@@ -38,18 +42,22 @@
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.3.0",
-    "prettier": "^1.18.2",
-    "rimraf": "^3.0.0"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "rimraf": "^3.0.0"
   }
 }

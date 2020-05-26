@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import React from 'react';
+import { Link, StaticQuery, graphql } from 'gatsby';
+import github from '../img/github-icon.svg';
+import logo from '../img/logo.svg';
 
 const Navbar = () => (
   <StaticQuery
@@ -17,7 +17,7 @@ const Navbar = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <nav className="navbar is-transparent">
         <div className="container">
           <div className="navbar-brand">
@@ -28,7 +28,7 @@ const Navbar = () => (
             </Link>
           </div>
           <div className="navbar-start">
-            {data.allWordpressPage.edges.map(edge => (
+            {data.allWordpressPage.edges.map((edge) => (
               <Link
                 className="navbar-item"
                 to={edge.node.slug}
@@ -54,6 +54,6 @@ const Navbar = () => (
       </nav>
     )}
   />
-)
+);
 
-export default Navbar
+export default Navbar;
