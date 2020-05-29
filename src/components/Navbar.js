@@ -15,11 +15,7 @@ const NavItem = styled(Link)`
   margin: 0 0.2em;
   color: #fff;
   text-decoration: none;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 4px;
-  }
-  &[aria-current="page"] {
+  &[aria-current="page"], &:hover {
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 4px;
   }
@@ -27,7 +23,7 @@ const NavItem = styled(Link)`
 
 const LogoNavItem = styled(NavItem)`
   display: block;
-  &:hover {
+  &[aria-current="page"], &:hover {
     background-color: transparent;
   }
 `;
